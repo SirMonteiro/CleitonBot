@@ -1,0 +1,37 @@
+{
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "Cleiton",
+  "version": "0.0.1",
+  "description": "Um bot sensacional br para o discord.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "discord.js": "^11.6.4",
+    "fs": "^0.0.2",
+    "enmap": "^5.2.4",
+    "quick.db": "^7.1.1",
+    "request-promise": "^4.2.5",
+    "cheerio": "^0.22.0",
+    "request": "^2.88.2",
+    "weather-js": "^2.0.0",
+    "translate": "^1.1.2"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/cleiton-bot-discord"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express",
+    "discord.js"
+  ]
+}
