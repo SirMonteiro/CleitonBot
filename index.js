@@ -15,8 +15,6 @@ const { Client, RichEmbed, Attachment } = require('discord.js');
 const client = new Client();
 const Enmap = require("enmap");
 const fs = require("fs");
-//const config = require('./config.json');
-//client.config = config;
 
 fs.readdir("./events/", (err, files) => {
   if (err) return console.error(err);
