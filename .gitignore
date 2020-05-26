@@ -34,3 +34,6 @@ node_modules/
 
 # Test directory
 drive/
+
+#Quick.db file
+json.sqlite

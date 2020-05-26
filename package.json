@@ -25,12 +25,11 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/cleiton-bot-discord"
+    "url": "https://github.com/SirMonteiro/CleitonBot/"
   },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
     "express",
     "discord.js"
   ]
