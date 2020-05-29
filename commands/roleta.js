@@ -18,7 +18,7 @@ exports.run = (client, message, args) => {
   const dadinhoEmbed = new RichEmbed()
     .setTitle('Roletando...')
     .setColor(rgb.hexrgb())
-    .setDescription(`O ${member} ${winlose} R$${Math.abs(roletavar)}`)
+    .setDescription(`O ${member} ${winlose} **R$${Math.abs(roletavar)}**`)
   message.channel.send(dadinhoEmbed)
 }
 

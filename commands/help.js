@@ -37,8 +37,10 @@ exports.run = (client, message, args) => {
             "falar": "Pague para Cleiton falar uma mensagem para você!",
             "frasedodia": "frase inspiradoura pra melhorar seu dia.",
             "clima": "Mostra a previsão do tempo atual.",
-            "google": "s",
-            "cor": "cor em hex",
+            "google": "ger arrumar essa mensagem",
+            "cor": "cor em hex. ger arrumar essa mensagem",
+						"gato": "ger arrumar essa mensagem",
+						"cachorro": "ger arrumar essa mensagem",
           }
         break
         case 'config':

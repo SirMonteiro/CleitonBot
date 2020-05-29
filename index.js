@@ -10,7 +10,6 @@ setInterval(() => {
   http.get(`http://CleitonBot--sirmonteiro.repl.co/`);
 }, 280000);
 
-
 const { Client, RichEmbed, Attachment } = require('discord.js');
 const client = new Client();
 const Enmap = require("enmap");
