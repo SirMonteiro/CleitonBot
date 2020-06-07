@@ -10,16 +10,20 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "discord.js": "^11.6.4",
-    "fs": "^0.0.2",
-    "enmap": "^5.2.4",
-    "quick.db": "^7.1.1",
-    "request-promise": "^4.2.5",
     "cheerio": "^0.22.0",
+    "discord.js": "^11.6.4",
+    "enmap": "^5.2.4",
+    "express": "^4.17.1",
+    "fs": "^0.0.2",
+    "google-translate-api": "^2.3.0",
+    "hastebin": "^0.2.1",
+    "piadas-library": "^1.2.7",
+    "quick.db": "^7.1.1",
     "request": "^2.88.2",
-    "weather-js": "^2.0.0",
-    "translate": "^1.1.2"
+    "request-promise": "^4.2.5",
+    "translate": "^1.1.2",
+    "translatte": "^2.5.8",
+    "weather-js": "^2.0.0"
   },
   "engines": {
     "node": "12.x"
