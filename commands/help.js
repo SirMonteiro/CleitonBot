@@ -32,7 +32,7 @@ exports.run = (client, message, args) => {
 			commands = {
 				"help": "Te mostra como usar esse magnífico bot.",
 				"ping": "Diz a frequência cardíaca do Cleiton.",
-				"botinfo": "geeeeeeeeeeeeeeeeeeeeeer",
+				"botinfo": "Informações sobre o bot",
 				"9": "99? 999? 9999?",
 				"f": "F para demonstrar respeito.",
 				"falar": "Pague para Cleiton falar uma mensagem para você!",
@@ -42,10 +42,10 @@ exports.run = (client, message, args) => {
 				"cor": "cor em hex. Uma cor bonita pro seu dia",
 				"gato": "miau miau, miau miau?",
 				"cachorro": "au au au, au au au. AU?",
-				"covid": "geeeeeeeeeeeeeeeeeeeeeer",
+				"covid": "Informações sobre o COVID-19",
 				"hastebin": "geeeeeeeeeeeeeeeeeeeeeer",
-				"piada": "geeeeeeeeeeeeeeeeeeeeeer",
-				"vacban": "geeeeeeeeeeeeeeeeeeeeeer",
+				"piada": "Toc-Toc?",
+				"vacban": "Veja se aquele trollzinho ja foi de beise",
 			}
 			break
 		case 'config':
