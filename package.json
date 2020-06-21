@@ -1,27 +1,23 @@
 {
-  "//1": "describes your app and its dependencies",
-  "//2": "https://docs.npmjs.com/files/package.json",
-  "//3": "updating this file will download and update your packages",
   "name": "Cleiton",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Um bot sensacional br para o discord.",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node -r dotenv/config index.js"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
     "discord.js": "^11.6.4",
-    "enmap": "^5.2.4",
+    "dotenv": "^8.2.0",
+    "enmap": "^5.3.1",
     "express": "^4.17.1",
-    "fs": "^0.0.2",
-    "google-translate-api": "^2.3.0",
+    "fs": "0.0.2",
     "hastebin": "^0.2.1",
     "piadas-library": "^1.2.7",
     "quick.db": "^7.1.1",
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
-    "translate": "^1.1.2",
     "translatte": "^2.5.8",
     "weather-js": "^2.0.0"
   },
@@ -34,7 +30,6 @@
   "license": "MIT",
   "keywords": [
     "node",
-    "express",
     "discord.js"
   ]
 }
