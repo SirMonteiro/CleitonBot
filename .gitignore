@@ -37,3 +37,6 @@ drive/
 
 #Quick.db file
 json.sqlite
+
+#Start script
+start.sh
