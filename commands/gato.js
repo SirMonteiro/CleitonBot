@@ -4,7 +4,7 @@ const request = require("request");
 exports.run = (client, message, args) => {
   request(
     {
-      url: "http://aws.random.cat/meow",
+      url: "https://api.thecatapi.com/v1/images/search",
       json: true,
     },
     function (error, response, body) {
@@ -12,7 +12,7 @@ exports.run = (client, message, args) => {
         const embed = new RichEmbed()
           .setTitle(":cat: Aqui está seu gato aleatório:")
           .setColor(rgb.hexrgb())
-          .setImage(body.file);
+          .setImage(body[0].url);
         message.channel.send(embed);
       }
     }
