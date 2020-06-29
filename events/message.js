@@ -1,10 +1,11 @@
-const db = require("quick.db");
+const db = require("../models/guild");
 const cooldown = new Set();
-module.exports = (client, message) => {
+module.exports = async (client, message) => {
   if (message.author.bot || message.channel.type === "dm") return;
 
-  let prefix = new db.table("guild_" + message.guild.id).get("prefix");
-  if (prefix == null) prefix = "?";
+  let prefix = await db.findOne({ id: message.guild.id })
+  prefix = prefix.prefix
+  if (!prefix) prefix = "?";
   client.prefix = prefix;
 
   const args = message.content.slice(client.prefix.length).trim().split(/ +/g);
