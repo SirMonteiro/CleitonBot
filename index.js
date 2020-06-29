@@ -10,7 +10,7 @@ const { Client } = require("discord.js");
 const client = new Client();
 const Enmap = require("enmap");
 const fs = require("fs");
-const db = require('./models/db')
+var db = require('./models/db')
 const { connect } = require('mongoose')
 
 fs.readdir("./events/", (err, files) => {
@@ -36,6 +36,9 @@ fs.readdir("./commands/", (err, files) => {
 });
 
 (async () => {
-  await connect('mongodb+srv://sirmonteiro:<password>@cleitonbot-o9gp6.gcp.mongodb.net/cleiton_beta?retryWrites=true&w=majority')
+  await connect('mongodb+srv://sirmonteiro:<pwd>@cleitonbot-o9gp6.gcp.mongodb.net/cleiton_beta?retryWrites=true&w=majority', {
+    useNewUrlParser: true,
+    useFindAndModify: false
+  })
   return client.login(process.env.TOKEN);
-})
+})()
