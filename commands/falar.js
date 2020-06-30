@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
     { guildID: message.guild.id, userID: message.author.id },
     (err, money) => {
       if (err) throw err;
-      if (!money || money < 100)
+      if (!money || money.money < 100)
         return message.reply(
           `você precisa de R$100 para poder usar o comando ${client.prefix}falar!`
         );
