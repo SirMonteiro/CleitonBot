@@ -1,9 +1,9 @@
-const db = require("../models/guild");
+const guildsdb = require("../models/guilds");
 const cooldown = new Set();
 module.exports = async (client, message) => {
   if (message.author.bot || message.channel.type === "dm") return;
 
-  let prefix = await db.findOne({ id: message.guild.id })
+  let prefix = await guildsdb.findOne({ id: message.guild.id })
   prefix = prefix.prefix
   if (!prefix) prefix = "?";
   client.prefix = prefix;

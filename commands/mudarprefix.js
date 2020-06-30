@@ -1,4 +1,4 @@
-const db = require("../models/guild");
+const guildsdb = require("../models/guilds");
 const { RichEmbed } = require("discord.js");
 const rgb = require("../hexrgb.js");
 exports.run = async (client, message, args) => {
@@ -15,7 +15,7 @@ exports.run = async (client, message, args) => {
     );
   if (args[0].length > 3)
     return message.reply("O novo prefix não pode ter mais de 3 caracteres!");
-  let guildb = await db.findOneAndUpdate({ id: message.guild.id }, { $set: { prefix: args[0] }}, { new: true })
+  let guildb = await guildsdb.findOneAndUpdate({ id: message.guild.id }, { $set: { prefix: args[0] }}, { new: true })
   const mudarprefix = new RichEmbed()
     .setTitle("Eba! Agora o Cleiton é chamado diferente no seu server.")
     .setColor(rgb.hexrgb())
