@@ -1,9 +1,16 @@
 const guildsdb = require("../models/guilds");
 const cooldown = new Set();
+const NodeCache = require( "node-cache" );
+const cache = new NodeCache( { stdTTL: 7200 } );
 module.exports = async (client, message) => {
   if (message.author.bot || message.channel.type === "dm") return;
-
-  let prefix = await guildsdb.findOne({ id: message.guild.id })
+  let prefix
+  prefix = cache.get( message.guild.id );
+  if(prefix == undefined){
+    prefix = await guildsdb.findOne({ id: message.guild.id })
+    let prefixcache = {prefix: prefix.prefix}
+    cache.set( message.guild.id, prefixcache );
+  }
   prefix = prefix.prefix
   if (!prefix) prefix = "?";
   client.prefix = prefix;
@@ -43,6 +50,10 @@ module.exports = async (client, message) => {
   setTimeout(() => {
     cooldown.delete(message.author.id);
   }, 2000);
+
+  if(message.toString().startsWith(client.prefix + 'mudarprefix')){
+    cache.del( message.guild.id )
+  }
 
   cmd.run(client, message, args);
 };
