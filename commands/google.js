@@ -11,7 +11,7 @@ exports.run = (client, message, args) => {
     let $ = cheerio.load(html);
     if (!$(".fTk7vd a").text().includes("http"))
       return message.reply(
-        "esse comando é meio bugado, me parace que esse termo me bugou!"
+        "Esse comando está em beta, e aconteceu alguma confusão comigo!"
       );
     let site = $(".fTk7vd a")[0].children[0].data;
     const embed = new RichEmbed()

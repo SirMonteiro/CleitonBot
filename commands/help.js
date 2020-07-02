@@ -39,7 +39,8 @@ exports.run = (client, message, args) => {
     case "moeda":
       commands = {
         dinheiro: "Veja a sua quantidade atual de dinheiro!",
-        placar: "placar geeeeeeeeeeeeeeeer"
+        placar: "Veja quem são os top 10 mais ricos do seu servidor!",
+        pagar: "Está devendo? transfira o seu dinheiro para outra pessoa!"
       };
       break;
     case "jogos":

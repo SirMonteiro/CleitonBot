@@ -14,9 +14,9 @@ exports.run = async (client, message, args) => {
       for (i = 0; res.length > 10 ? i < 10 : i < res.length; i++) {
         let member = message.guild.members.get(res[i].userID) || "Membro saiu do servidor"
         if (member === "Membro saiu do servidor") {
-          placar += `${i + 1}. **${member}** - R$${res[i].money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} coins\n`
+          placar += `${i + 1}. **${member}** - R$${res[i].money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}\n`
         } else {
-          placar += `${i + 1}. **${member.user.username}** - R$${res[i].money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} coins\n`
+          placar += `${i + 1}. **${member.user.username}** - R$${res[i].money.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}\n`
         }
         embed.setDescription(placar)
       }
