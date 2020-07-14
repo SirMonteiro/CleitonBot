@@ -59,6 +59,7 @@ exports.run = (client, message, args) => {
         gato: "miau miau, miau miau?",
         cachorro: "au au au, au au au. AU?",
         piada: "Toc-Toc?",
+        moleduro: "hmmmmmmmmmmmmmm"
       };
       break;
     case "utilidades":
