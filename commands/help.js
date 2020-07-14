@@ -40,7 +40,8 @@ exports.run = (client, message, args) => {
       commands = {
         dinheiro: "Veja a sua quantidade atual de dinheiro!",
         placar: "Veja quem são os top 10 mais ricos do seu servidor!",
-        pagar: "Está devendo? transfira o seu dinheiro para outra pessoa!"
+        pagar: "Está devendo? transfira o seu dinheiro para outra pessoa!",
+        cotacao: "Saiba a cotação atual de várias moedas em comparação a várias moedas internacionais."
       };
       break;
     case "jogos":
